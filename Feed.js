@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Text,View,StyleSheet, StatusBar, FlatList} from 'react-native';
-import PostCard from 'PostCard';
+import PostCard from './PostCard';
 
 export default class Feed extends React.Component{
     renderItem=({item:post})=>{
@@ -17,7 +17,7 @@ export default class Feed extends React.Component{
                                     style={styles.iconImage}/>
                         </View>
                         <View style={styles.appTitleTextContainer}>
-                            <Text style={styles.appTitleText}> Spectagram </Textt>
+                            <Text style={styles.appTitleText}> Spectagram </Text>
                         </View>
                     </View>
                     <View styles={styles.cardContainer}>
